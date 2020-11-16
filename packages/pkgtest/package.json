@@ -1,6 +1,6 @@
 {
   "name": "@example/pkgtest",
-  "version": "1.0.6-ci.2",
+  "version": "1.0.6-ci.3",
   "description": "",
   "main": "index.js",
   "scripts": {
