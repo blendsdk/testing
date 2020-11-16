@@ -13,10 +13,10 @@ if [ "${DIST_TAG}" = "beta" ]; then
     #yarn install
     #yarn build
     #yarn test
-    $LERNA version --conventional-commits --conventional-prerelease --no-changelog --no-push --preid ${DIST_TAG} -y
+    $LERNA version --conventional-commits --conventional-prerelease --no-changelog --no-git-tag-version --no-push --preid ${DIST_TAG} -y
+    git add .
+    git commit -am:"savepoint ${RELEASE_BRANCH}"
     git status
 fi;
 
 git checkout ${BRANCH_NAME}
-git branch -d ${RELEASE_BRANCH}
-git tag -l
