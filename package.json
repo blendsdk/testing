@@ -11,7 +11,7 @@
   },
   "scripts": {
     "release":"git diff-index --quiet HEAD && yarn build && yarn test && yarn tag-version --conventional-commits --conventional-graduate",
-    "tag-version":"lerna version --no-changelog --include-merged-tags",
+    "tag-version":"lerna version --no-changelog --include-merged-tags --conventional-commits",
     "publish-packages":"lerna publish from-package",
     "package-update": "ncu -u && lerna exec ncu -- -u && rm -fR yarn.lock node_modules && yarn install && yarn bootstrap",
     "bootstrap": "lerna bootstrap --use-workspaces",
