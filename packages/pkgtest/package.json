@@ -1,6 +1,6 @@
 {
   "name": "@example/pkgtest",
-  "version": "1.0.5",
+  "version": "1.0.6-ci.0+f98d3d8",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,5 +8,6 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "gitHead": "f98d3d89b43b8015a17a58326ae257a64276e0e8"
 }
