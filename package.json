@@ -10,9 +10,9 @@
     "yarn": ">=1.5.1"
   },
   "scripts": {
-    "release":"git diff-index --quiet HEAD && yarn build && yarn test && yarn tag-version --conventional-commits --conventional-graduate",
-    "tag-version":"lerna version --no-changelog --include-merged-tags --conventional-commits",
-    "publish-packages":"lerna publish from-package",
+    "release": "git diff-index --quiet HEAD && yarn build && yarn test && yarn tag-version --conventional-commits --conventional-graduate",
+    "tag-version": "lerna version --no-changelog --include-merged-tags --conventional-commits",
+    "publish-packages": "lerna publish from-package",
     "package-update": "ncu -u && lerna exec ncu -- -u && rm -fR yarn.lock node_modules && yarn install && yarn bootstrap",
     "bootstrap": "lerna bootstrap --use-workspaces",
     "build": "lerna clean -y && lerna run build",
@@ -20,14 +20,16 @@
     "test": "jest jest --clearCache && lerna run test",
     "dev-tag-version": "lerna version --conventional-commits --conventional-prerelease --preid dev",
     "rel-tag-version": "lerna version --conventional-commits --conventional-graduate --preid dev",
-    "pub":"lerna publish --conventional-commits --no-changelog --include-merged-tags --conventional-commits",
-    "pub-dev":"yarn dev-tag-version -y && yarn pub --pre-dist-tag dev -y",
-    "pub-prod":"yarn rel-tag-version -y && yarn pub --dist-tag latest -y"
-
+    "pub": "lerna publish --conventional-commits --no-changelog --include-merged-tags --conventional-commits",
+    "pub-dev": "yarn dev-tag-version -y && yarn pub --pre-dist-tag dev -y",
+    "pub-prod": "yarn rel-tag-version -y && yarn pub --dist-tag latest -y"
   },
   "devDependencies": {
-    "lerna": "^3.22.1",
     "@types/node": "^14.6.4",
+    "lerna": "^3.22.1",
     "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "lerna-git-flow-deploy": "^0.6.0"
   }
 }
