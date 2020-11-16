@@ -20,7 +20,7 @@
     "test": "jest jest --clearCache && lerna run test",
     "dev-tag-version": "lerna version --conventional-commits --conventional-prerelease --preid dev",
     "rel-tag-version": "lerna version --conventional-commits --conventional-graduate --preid dev",
-    "pub":"lerna publish --conventional-commits",
+    "pub":"lerna publish --conventional-commits --no-changelog --include-merged-tags --conventional-commits",
     "pub-dev":"yarn dev-tag-version -y && yarn pub --pre-dist-tag dev -y",
     "pub-prod":"yarn rel-tag-version -y && yarn pub --dist-tag latest -y"
 
