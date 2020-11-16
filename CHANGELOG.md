@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.6-ci.2](https://github.com/blendsdk/testing/compare/v1.0.5...v1.0.6-ci.2) (2020-11-16)
+
+
+### Bug Fixes
+
+* Mon Nov 16 23:43:32 CET 2020 ([f98d3d8](https://github.com/blendsdk/testing/commit/f98d3d89b43b8015a17a58326ae257a64276e0e8))
+* Mon Nov 16 23:44:38 CET 2020 ([9557ff0](https://github.com/blendsdk/testing/commit/9557ff05fbd943376fbec1e43742ce23ed79e4c9))
+
+
+
+
+
 ## [1.0.2](https://github.com/blendsdk/testing/compare/v1.0.1...v1.0.2) (2020-11-16)
 
 
