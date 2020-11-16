@@ -8,6 +8,9 @@ if [ "${BRANCH_NAME}" = "master" ]; then
 fi;
 
 git checkout -b ${RELEASE_BRANCH}
-if [ "$DIST_TAG" === "beta"]; then
+
+if [ "${DIST_TAG}" = "beta"]; then
     $LERNA version --conventional-commits --conventional-prerelease --no-changelog --no-git-tag-version --no-push --preid ${DIST_TAG}
 fi;
+
+git checkout ${BRANCH_NAME}
