@@ -18,3 +18,5 @@ if [ "${DIST_TAG}" = "beta" ]; then
 fi;
 
 git checkout ${BRANCH_NAME}
+git branch -d ${RELEASE_BRANCH}
+git tag -l
