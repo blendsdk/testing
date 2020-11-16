@@ -13,7 +13,7 @@ if [ "${DIST_TAG}" = "beta" ]; then
     #yarn install
     #yarn build
     #yarn test
-    $LERNA version --conventional-commits --conventional-prerelease --no-changelog --no-git-tag-version --no-push --preid ${DIST_TAG} -y
+    $LERNA version --conventional-commits --conventional-prerelease --no-changelog --no-push --preid ${DIST_TAG} -y
     git status
 fi;
 
